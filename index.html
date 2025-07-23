@@ -20,32 +20,37 @@
       text-align: center;
       color: #2e7d32;
     }
-    .donation-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 2em;
-      margin-top: 2em;
-    }
-    .donation-box {
-      width: 240px;
-      text-align: left;
-    }
-    .qr-code {
-      width: 150px;
-      height: auto;
-      margin: 1em 0 0.2em 0;
-      display: block;
-    }
-    .donate-button {
-      display: inline-block;
-      background-color: #43a047;
-      color: white;
-      text-decoration: none;
-      padding: 0.5em 1em;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
+.donation-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* flush left instead of center */
+  gap: 1.2em;
+  margin-top: 1.5em;
+}
+
+.donation-box {
+  width: 200px; /* narrower boxes */
+  text-align: center; /* center inside */
+}
+
+.qr-code {
+  width: 120px; /* slightly smaller QR codes */
+  height: auto;
+  margin: 0.8em auto 0.3em auto; /* centered spacing */
+  display: block;
+}
+
+.donate-button {
+  display: inline-block;
+  background-color: #43a047;
+  color: white;
+  text-decoration: none;
+  padding: 0.4em 0.8em; /* smaller padding */
+  font-size: 0.95em; /* slightly smaller text */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
     .donate-button span.donate-by {
       color: #66bb6a; /* Closer match to button green */
     }
@@ -61,6 +66,19 @@
       font-style: italic;
       margin-top: 1em;
     }
+
+  @media (max-width: 600px) {
+    .donation-box {
+      width: 45%;  /* two boxes per row on small screens */
+    }
+  }
+
+  @media (max-width: 400px) {
+    .donation-box {
+      width: 90%;  /* full width on very small screens */
+    }
+  }
+
   </style>
 </head>
 <body>
@@ -71,7 +89,7 @@
 <a href="https://play.math.illinois.edu/">playground</a> for some of my secret creative mathematical projects. It will be updated according to whims of creativity.</p>
   <p>If you'd like to support me and my family for any reason - or for no reason at all - please feel free to make a personal donation below. Any amount between 
 $1.61803398874989484820458683 and $314159265358979323846264338 will do.</p>
-  
+
 
 <div class="donation-container">
 
@@ -83,6 +101,16 @@ $1.61803398874989484820458683 and $314159265358979323846264338 will do.</p>
     <span class="donate-by">Donate by</span> card etc
   </a>
 </div>
+
+<div class="donation-box">
+  <a href="https://donorbox.org/igor-mineyev-creative-math" target="_blank">
+    <img src="Mineyev-donorbox-qr.png" alt="Donorbox QR Code" class="qr-code">
+  </a>
+  <a href="https://donorbox.org/igor-mineyev-creative-math" class="donate-button" target="_blank">
+    <span class="donate-by">Donate by</span> card etc
+  </a>
+</div>
+
 
 
     <div class="donation-box">
@@ -112,16 +140,6 @@ $1.61803398874989484820458683 and $314159265358979323846264338 will do.</p>
   </a>
 </div>
 
-<!-- Beginning of comment 
-
-    <div class="donation-box">
-      <a href="https://account.venmo.com/u/IgorMineyev">
-      <img src="Mineyev-kofi-qr.png" alt="Ko-fi QR Code" class="qr-code"></a>
-      <a href="https://ko-fi.com/IgorMineyev" class="donate-button" target="_blank">
-        <span class="donate-by">Donate by</span> Ko-fi
-      </a>
-    </div>
-End of comment. -->
   </div>
   <hr>
   <p><a href="https://mineyev.web.illinois.edu/">Igor Mineyev's Math Page</a></p>
