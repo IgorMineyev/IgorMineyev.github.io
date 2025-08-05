@@ -79,9 +79,32 @@
     }
   }
 
+.quote {
+  font-style: italic;
+  font-size: 0.7em;
+  line-height: 1.2;
+}
+
+    .quote-left {
+        text-align: left;
+    }
+
+    .quote-right {
+        text-align: left;
+    }
+
+    .author {
+        font-style: normal;
+        text-align: left;
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
   </style>
 </head>
+
+
 <body>
+
   <h1>Igor Mineyev's UnderGround</h1> 
   
   <p>I am a mathematician, the link to my official Math Page is below.</p>
@@ -90,7 +113,27 @@
 
 Here is one project you can enjoy now - a meditative math video. Make it full-screen and watch to the end. It is based on a particular function introduced in 1859. Can you guess the function?<p>
 
-<iframe width="400" height="225" src="https://www.youtube.com/embed/Mcn9r26qnZE?si=Mog3uM4G3il3h2Rd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="display: flex; align-items: flex-start; gap: 2em; margin-top: 1em; flex-wrap: wrap;">
+
+  <!-- Video on the left -->
+  <iframe width="400" height="225"
+    src="https://www.youtube.com/embed/Mcn9r26qnZE?si=Mog3uM4G3il3h2Rd"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+
+  <!-- Quote on the right -->
+  <div class="quote quote-right" style="max-width: 300px; font-style: italic; font-size: 0.9em; line-height: 1.2;">
+    ... you could not direct the wind, 
+    but you could trim your sail so as to propel your vessel as you pleased,
+    no matter which way the wind blew.
+    <div class="author" style="font-style: normal; margin-top: 10px; font-size: 0.9em;">– Cora L. V. Hatch, in that very year of 1859</div>
+  </div>
+
+</div>
+
 
 <hr>
 
