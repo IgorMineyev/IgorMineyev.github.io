@@ -51,7 +51,7 @@ export const SpiroLogo: React.FC<SpiroLogoProps> = ({
                 ry="6.0"
             />
 
-            {/* "Igor Mineyev's" text as path */}
+            {/* "Igor Mineyev" text as path */}
             <path
                 style={{
                     fontWeight: 'bold',
